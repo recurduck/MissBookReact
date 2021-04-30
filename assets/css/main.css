@@ -1,0 +1,58 @@
+body {
+    background-color: whitesmoke;
+}
+.danger {
+    color: red;
+}
+.success {
+    color: green
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .book-list > * {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .book-preview {
+        width: 150px;
+        background-color: rgb(223, 223, 223);
+        box-shadow: 0 0px 3px 2px #7e7d7d78;
+        padding: 10px;
+        text-align: center;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .book-preview:hover{
+        box-shadow: 0 0px 3px 2px #414141d5;
+    }
+    .book-preview img {
+        width: 100px;
+    }
+
+    .book-filter {
+        padding: 15px 0;
+    }
+    .book-filter label:not(:first-of-type) {
+        margin-left: 10px;
+    }
+    .book-filter input {
+        margin-left: 5px;
+    }
+
+.book-details {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .book-details img:not(:first-of-type) {
+        position: relative;
+        top: -260px;
+        transform: rotate(45deg);
+        width: 300px;
+    }
